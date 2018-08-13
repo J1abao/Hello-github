@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)file:///D:/vscode/web0810/shopcar.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/pagination.css">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 600px;
+            background: #ddd;
+        }
+
+        .container {
+            width: 1120px;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .container {
+            overflow: hidden;
+        }
+
+        .container li {
+            box-sizing: border-box;
+            width: 224px;
+            height: 403px;
+            padding-left: 10px;
+            float: left;
+        }
+
+        .container ul {
+            margin-left: -10px;
+            overflow: hidden;
+        }
+
+        .container li img {
+            width: 100%;
+            height: 321px;
+        }
+
+        .container .detail {
+            overflow: hidden;
+            line-height: 30px;
+        }
+
+        .container .detail span:nth-of-type(1) {
+            display: block;
+            float: left;
+            color: #f10;
+            font-weight: bold;
+        }
+
+        .container .detail span:nth-of-type(2) {
+            display: block;
+            float: right;
+            color: #b6b6bb;
+        }
+
+        .container .title {
+            line-height: 20px;
+            font-size: 14px;
+            padding-left: 30px;
+        }
+
+        .loading {
+            text-align: center;
+        }
+
+        .pagination {
+            text-align: center;
+        }
+
+        .shopcar {
+            text-align: right;
+        }
+
+        .shopcar button {
+            padding: 2px 5px;
+            border: 1px solid #f99;
+            background: none;
+        }
+    </style>
+    <div class="container">
+        <ul><li>
+                                    <div class="img-wrap">
+                                            <img src="./Document_files/6896510_1ljflj3409h8jbcej278bic9hh948_640x960.jpg" alt="">
+                                    </div>
+                                    <div class="detail">
+                                        <span>￥141.43</span>
+                                        <span>☆27483</span>
+                                    </div>
+                                    <div class="title">
+                                        <p>2018韩版新款棉衣加厚...</p>
+                                    </div>
+                                    <div class="shopcar">
+                                        <button class="shopcar_btn" data-id="0">加入购物车</button>
+                                    </div>
+                                </li><li>
+                                    <div class="img-wrap">
+                                            <img src="./Document_files/180228_3gdeid0icgiakb676e63576edg7e9_640x960.jpg" alt="">
+                                    </div>
+                                    <div class="detail">
+                                        <span>￥28.43</span>
+                                        <span>☆291</span>
+                                    </div>
+                                    <div class="title">
+                                        <p>吊带小背心女外穿百搭20...</p>
+                                    </div>
+                                    <div class="shopcar">
+                                        <button class="shopcar_btn" data-id="1">加入购物车</button>
+                                    </div>
+                                </li><li>
+                                    <div class="img-wrap">
+                                            <img src="./Document_files/180227_41iilgb3a5iakhi02b4g9c6i8001l_640x960.jpg" alt="">
+                                    </div>
+                                    <div class="detail">
+                                        <span>￥112.86</span>
+                                        <span>☆603</span>
+                                    </div>
+                                    <div class="title">
+                                        <p>秋季新款宽松bf风后背绑...</p>
+                                    </div>
+                                    <div class="shopcar">
+                                        <button class="shopcar_btn" data-id="2">加入购物车</button>
+                                    </div>
+                                </li><li>
+                                    <div class="img-wrap">
+                                            <img src="./Document_files/170903_31eag9fcf4cbg2af2g23ia3fj7afa_640x960.jpg" alt="">
+                                    </div>
+                                    <div class="detail">
+                                        <span>￥125.72</span>
+                                        <span>☆2756</span>
+                                    </div>
+                                    <div class="title">
+                                        <p>秋季韩版新款大口袋长袖纯...</p>
+                                    </div>
+                                    <div class="shopcar">
+                                        <button class="shopcar_btn" data-id="3">加入购物车</button>
+                                    </div>
+                                </li><li>
+                                    <div class="img-wrap">
+                                            <img src="./Document_files/170923_241be9dg6iad79k0ekda13g8d7bk4_640x960.jpg" alt="">
+                                    </div>
+                                    <div class="detail">
+                                        <span>￥50.00</span>
+                                        <span>☆6369</span>
+                                    </div>
+                                    <div class="title">
+                                        <p>春秋新款韩版黑色中腰打底...</p>
+                                    </div>
+                                    <div class="shopcar">
+                                        <button class="shopcar_btn" data-id="4">加入购物车</button>
+                                    </div>
+                                </li></ul>
+    </div>
+    <div class="pagination"><span class="current prev">Prev</span><span class="current">1</span><a href="file:///D:/vscode/web0810/shopcar.html#">2</a><a href="file:///D:/vscode/web0810/shopcar.html#">3</a><a href="file:///D:/vscode/web0810/shopcar.html#">4</a><a href="file:///D:/vscode/web0810/shopcar.html#">5</a><a href="file:///D:/vscode/web0810/shopcar.html#">6</a><a href="file:///D:/vscode/web0810/shopcar.html#" class="next">Next</a></div>
+    <script src="./Document_files/jquery.js.下载"></script>
+    <script src="./Document_files/jquery.myPagation.js.下载"></script>
+    <script src="./Document_files/jquery.pagination.js.下载"></script>
+    <script src="./Document_files/jquery.cookie.js.下载"></script>
+    <script>
+        $(function () {
+            var pag = $.pag();
+            new pag().init();
+
+            function ShopCar() {};
+
+            $.extend(ShopCar.prototype, {
+                init: function () {
+                    this.ul = $(".container ul");
+                    $.cookie("goodsList","[]")
+                    this.handleEvent();
+                },
+                handleEvent: function () {
+                    this.ul.on("click", ".shopcar_btn", this.addCar.bind(this))
+                },
+                addCar: function (event) {
+                    var e = event || window.event;
+                    var target = e.target || e.srcElement;
+                    var goodsId = $(target).attr("data-id");
+
+                    var goodsCookie = $.cookie("goodsList");
+
+                    var cookieArry = JSON.parse(goodsCookie);
+                    console.log(cookieArry)
+
+                    cookieArry.push(goodsId);
+                    
+                    
+                }
+            })
+            var shopCar = new ShopCar();
+            shopCar.init();
+        })
+    </script>
+
+</body></html>
