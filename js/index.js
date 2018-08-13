@@ -27,7 +27,7 @@
             flag = false; //最后一张动画执行结束
         });
     }
-     timer = setInterval(oNext.onclick,3000)
+    timer = setInterval(oNext.onclick,3000)
     banner.onmouseover = function(){
         oNext.style.display = "block"
         oPrev.style.display = "block"
@@ -57,9 +57,25 @@
         oNext.style.display = "none"
         oPrev.style.display = "none"
     }
-
+    //回到顶部      //导航定位
     var toTop = document.getElementById("totop");
-    toTop.onclick = function(){
+    onscroll = function(){
+        var scrollTop = document.documentElement.scrollTop;
 
+        if(scrollTop >= 400){
+            toTop.style.display = "block";
+        }else{
+            toTop.style.display = "none";
+
+        }
+    }
+    toTop.onclick = function(){
+        
         document.documentElement.scrollTop = 0;
     }
+
+    
+
+    
+
+    

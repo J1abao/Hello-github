@@ -358,11 +358,24 @@ header nav .user-center .upload:hover {
 }
 
 /* 导航 */
+.subnav-content-wrap{
+    width: 100%;
+    min-height: 56px;
+    background-color: #fff
+}
+.subnav-wrap{
+    left: 0;
+    box-sizing: border-box;
+    background: #fff;
+    
+}
 .subnav-contentbox{
     width: 1120px;
     height: 56px;
     margin: 0 auto;
-    /* background: aqua; */
+}
+.subnav-contentbox .tab-nav-container{
+    background: #fff;
 }
 .subnav-contentbox ul{
     width: 1120px;
@@ -418,6 +431,7 @@ header nav .user-center .upload:hover {
 .bg .all-work-list{
     width: 1130px;
     height: 2624px;
+    padding-top: 20px; 
     margin: 0 auto;
 }
 .bg .all-work-list .card-box{
@@ -519,6 +533,8 @@ header nav .user-center .upload:hover {
     cursor: pointer; 
     text-align: center;
     line-height: 50px;
+    display: none;
+    /* position: ; */
 }
 #totop img{
     width: 15px;
