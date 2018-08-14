@@ -57,7 +57,7 @@
         oNext.style.display = "none"
         oPrev.style.display = "none"
     }
-    //回到顶部      //导航定位
+    //回到顶部      
     var toTop = document.getElementById("totop");
     onscroll = function(){
         var scrollTop = document.documentElement.scrollTop;
@@ -74,7 +74,25 @@
         document.documentElement.scrollTop = 0;
     }
 
-    
+    //导航定位
+    $(function(){
+        $(window).on("scroll",function(){
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            if(scrollTop >= $(".subnav-content-wrap").offset().top){
+                $("#subnav-wrap").css({
+                    position:"fixed",
+                    top:"0"
+                })
+                $(".temporary-entrance").fadeOut(300);
+            }else{
+                $("#subnav-wrap").css({
+                    position:"static"
+                })
+                $(".temporary-entrance").fadeIn(300);
+            }
+
+        })
+    })
 
     
 
